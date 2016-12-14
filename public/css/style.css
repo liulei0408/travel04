@@ -1,0 +1,13 @@
+*{padding:0;margin:0}
+body{padding:0;margin:0;font-family:Arial,"宋体";color:#898989;font-size:14px;line-height:24px;}
+h3 {font-size:22px;font-weight:bold;}
+ul,li,ol,dl,dt,dd,p{padding:0;margin:0;list-style:none;}
+a{color:#898989;text-decoration:none}
+a:hover{cursor:pointer;color:#9f8054;}
+
+/* food_img */
+.food_img{width:100%;overflow:hidden;margin:20px auto;}
+.food_img li{float:left;width:400px;height:300px;position:relative;overflow:hidden;}
+.box{width:350px;height:260px;background:url(images/food_bg.jpg) no-repeat left top #020000;position:absolute;left:0;padding-left:30px;line-height:18px;padding-top:12px;color:#e69714;top:-142px;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8}
+.box h3{color:#fff;}
+.box a{display:block;margin-top:5px;}
