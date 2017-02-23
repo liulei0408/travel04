@@ -25,14 +25,14 @@ CREATE TABLE `wine_and_dine` (
   `name` varchar(50) NOT NULL,
   `alias` varchar(50) DEFAULT NULL,
   `taste` varchar(20) DEFAULT NULL,
-  `area` varchar(20) DEFAULT NULL,
+  `area` varchar(50) DEFAULT NULL,
   `history` varchar(500) DEFAULT NULL,
   `propose` varchar(50) DEFAULT NULL,
   `intro` varchar(1000) DEFAULT NULL,
   `pic_1` varchar(50) DEFAULT NULL,
   `pic_2` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

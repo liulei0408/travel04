@@ -16,6 +16,7 @@
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
+	 
 }
 
 /* Common style */
@@ -24,10 +25,9 @@
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 320px;
-	max-width: 480px;
+	 
 	max-height: 360px;
-	width: 48%;
+	width: 480px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -36,8 +36,7 @@
 .grid figure img {
 	position: relative;
 	display: block;
-	min-height: 100%;
-	max-width: 100%;
+	 
 	opacity: 0.8;
 }
 

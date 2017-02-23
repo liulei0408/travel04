@@ -2,37 +2,33 @@
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons.eot');
-	src:url('../fonts/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons.svg#codropsicons') format('svg');
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
 .clearfix:after { clear: both; }
 
 body {
-	background: #fff;
-	color: #383a3c;
+
+	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
-	line-height: 1.25;
-	font-family: 'Raleway', Calibri, Arial, sans-serif;
-}
-
-a, button {
-	outline: none;
+	font-family: 'Raleway', Arial, sans-serif;
 }
 
 a {
-	color: #566473;
+	outline: none;
+	color: #3498db;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
-	color: #34495e;
+	color: #528cb3;
 }
 
 section {
@@ -40,49 +36,95 @@ section {
 	text-align: center;
 }
 
-p.ref {
-	text-align: center;
-	padding: 2em 1em;
+.content {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.content > h2 {
+	clear: both;
+	margin: 0;
+	padding: 4em 1% 0;
+	color: #484B54;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+.content > h2:first-child {
+	padding-top: 0em;
 }
 
 /* Header */
 .codrops-header {
 	margin: 0 auto;
-	padding: 2em;
+	padding: 4em 1em;
 	text-align: center;
-	max-width: 100%;
 }
 
 .codrops-header h1 {
 	margin: 0;
-	font-size: 4.5em;
-	line-height: 1;
-	font-weight: 200;
+	font-weight: 800;
+	font-size: 4em;
+	line-height: 1.3;
 }
 
 .codrops-header h1 span {
 	display: block;
-	padding: 1em 0 1.5em;
-	font-size: 36%;
-	color: #95a5a6;
-	line-height: 1.4;
+	padding: 0 0 0.6em 0.1em;
+	color: #74777b;
+	font-weight: 300;
+	font-size: 45%;
+}
+
+/* Demo links */
+.codrops-demos {
+	clear: both;
+	padding: 1em 0 0;
+	text-align: center;
+}
+
+.content + .codrops-demos {
+	padding-top: 5em;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 1em 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a:focus,
+.codrops-demos a.current-demo {
+	background: #3c414a;
+	color: #fff;
 }
 
 /* To Navigation Style */
 .codrops-top {
 	width: 100%;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 0.69em;
-	text-align: center;
-	padding: 3em 0;
+	line-height: 2.2;
 }
 
 .codrops-top a {
 	display: inline-block;
-	padding: 1.5em;
+	padding: 1em 2em;
 	text-decoration: none;
 	letter-spacing: 1px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
 }
 
 .codrops-icon:before {
@@ -105,72 +147,28 @@ p.ref {
 	content: "\e004";
 }
 
-/* Demo Buttons Style */
-.codrops-demos {
-	padding-top: 1em;
-	font-size: 0.8em;
-	text-align:center;
-}
-
-.codrops-demos a {
-	display: inline-block;
-	margin: 0.35em 0.1em;
-	padding: 0.5em 1.2em;
-	outline: none;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-	border-radius: 2px;
-	font-size: 110%;
-	border: 2px solid transparent;
-}
-
-.codrops-demos a:hover,
-.codrops-demos a.current-demo {
-	border-color: #383a3c;
-}
-
-.codrops-demos h3 {
-	margin: 0;
-	padding: 1em 0 0.5em 0;
-	font-size: 0.9em;
-	float: left;
-	min-width: 90px;
-	clear: left;
-}
-
-.codrops-demos div:not(:first-child) h3 {
-	padding-top: 2em;
-}
-
-.codrops-demos a:hover,
-.codrops-demos a.current-demo {
-	color: inherit;
-	border-color: initial;
-}
-
 /* Related demos */
 .related {
-	padding: 10em 0;
-}
-
-.related p {
-	font-size: 1.5em;
+	clear: both;
+	padding: 6em 1em;
+	font-size: 120%;
 }
 
 .related > a {
 	display: inline-block;
-	text-align: center;
 	margin: 20px 10px;
 	padding: 25px;
-	vertical-align: middle;
+	border: 1px solid #4f7f90;
+	text-align: center;
+}
+
+.related a:hover {
+	border-color: #39545e;
 }
 
 .related a img {
 	max-width: 100%;
 	opacity: 0.8;
-	border-radius: 10px;
 }
 
 .related a:hover img,
@@ -180,17 +178,16 @@ p.ref {
 
 .related a h3 {
 	margin: 0;
-	min-height: 63px;
 	padding: 0.5em 0 0.3em;
 	max-width: 300px;
-	text-align: center;
-	font-weight: 400;
-	font-size: 1em;
+	text-align: left;
 }
 
-@media screen and (max-width: 40em) {
-
-	.codrops-header h1 {
-		font-size: 2.5em;
+@media screen and (max-width: 25em) {
+	.codrops-header {
+		font-size: 75%;
+	}
+	.codrops-icon span {
+		display: none;
 	}
 }

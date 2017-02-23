@@ -14,19 +14,25 @@
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/stylesCode.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+ <script src="can.js/TweenLite.min.js"></script>
+    <script src="can.js/EasePack.min.js"></script>
+    <script src="can.js/rAF.js"></script>
+     
 
 
-<script type="text/javascript" src="jquery/jquery.js"></script>
+ <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+ <script type="text/javascript" src="js/arg-1.3.js"></script>
+ <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.js"></script>
+ <script src="js/js.cookie-2.1.0.min.js"></script>
+
  
 
 
   
  
 
-<!-- <script type="text/javascript" src="js/js.cookie-2.1.0.min.js"></script>
-<script src="js/handlebars-v4.0.5.js" type="text/javascript" ></script>
-<script src="js/arg-1.3.js"></script>
- <script src="js/jquery-1.12.1.min.js"></script> -->
+ 
  
   
  
@@ -40,9 +46,9 @@
 	<div class="container">
        <div class="row">
        <div class="col-md-2">
-       	<div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+       	<div class="logo"><a href="#"><img src="images/logo.png"  style="margin-top: 5px;"></a></div>
        </div>
-	    <div class="col-md-4"> 
+	    <div class="col-md-4" style="width: 390px;"> 
 			<ul class="nav">
 					<li class="active"><a href="#" style="width: 67px;height: 40px;background-color: rgba(0,0,0,0.5);">首页</a></li>
 					<li><a href="#">首页</a></li>
@@ -53,9 +59,9 @@
 			</div>
 			 
 			 
-			<div class="col-md-4 col-md-offset-2">
+			<div class="col-md-4 ">
 				<ul class="right">
-					<li><a href="#">登录</a></li>
+					<li><a href="#" id="yh">登录</a></li>
 					<li><a href="#">注册</a></li>
 				</ul>
 				</div>
@@ -68,11 +74,11 @@
  
           <!-- 代码部分begin-->
     <div class="demo-1">
-        <div class="content" >
+      
             <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
                 <h1 class="main-title">Gymno-<span class="thin">Travel</span></h1>
-            </div>
+         
         </div>
     </div>
     <script src="js/TweenLite.min.js"></script>
@@ -90,10 +96,18 @@
   <p class="you">吃喝玩乐！！！</p>
   <P class="sou">搜一搜，灵感马上来！</p>
   </lable>
- <div class="search">
+  <div class="search">
     <input class="text" type="text">
-    <input class="submit" type="submit"> 
+    <a href="seach.html"><input class="submit" type="submit"> </a>
     </div>
+   </div>
+ </div>
+
+ <!-- <div class="search">
+    <input class="text" type="text">
+    <a href="seach.html"><input class="submit" type="submit"></a> 
+    </div> -->
+   
    </div>
  </div>
   
@@ -105,11 +119,11 @@
  
 
 <!-- 景点推荐  begin-->
-<div class="scape">
-	<div class="container">
-	<div class="col-md-12">
+<div class="wz">
+<div class="container">
+<div class="col-md-12">
 	<ul class="fl">
-		<span>季节:</span>
+		<span><a href="#">季节:</a></span>
 			<li><a href="#">春</a></li>
 			<li><a href="#">夏</a></li>
 			<li><a href="#">秋</a></li>
@@ -118,7 +132,7 @@
 </div>
 	<div class="col-md-12">
 	<ul class="fl">
-		<span>类别:</span>
+		<span><a href="#">类别:</a></span>
 		<li><a href="#">湖泊风景区</a></li>
 		<li><a href="#">山岳风景区</a></li>
 			<li><a href="#">森林风景区</a></li>
@@ -131,7 +145,7 @@
 	</div>
 	<div class="col-md-12">
 	<ul class="fl">
-		<span>地区:</span>
+		<span><a href="#">地区:</a></span>
 		 <li><a href="#">东北</a></li>
 			<li><a href="#">北</a></li>
 			<li><a href="#">西北</a></li>
@@ -139,115 +153,119 @@
 			<li><a href="#">中</a></li>
 			<li><a href="#">东</a></li>
 			<li><a href="#">东南</a></li>
-			<li><a href="#">南</a></li>
+			<li><a href="#">南</a></li> 
 			<li><a href="#">西南</a></li>
 		</ul>
 	</div>
-    <div class="col-md-3">
+	</div>
+	</div>
+<div class="scape">
+	<div class="container">
+<div class="col-md-3">
                         <div class="dtl27" ">
-                            <img src="images/feng.jpg" alt="" style="margin-top: 60px;">
+                            <img src="images/27.jpg" alt="" style="margin-top: 60px;">
                             <div class="dtl" style="margin-top: 60px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                         </div>
      <div class="col-md-3">                   
                      <div class="dtl27">
-                            <img src="images/feng-1.jpg" alt="" style="margin-top: 60px;">
+                            <img src="images/17.jpg" alt="" style="margin-top: 60px;">
                             <div class="dtl" style="margin-top: 60px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                    </div>
 <div class="col-md-3">                   
                      <div class="dtl27">
-                            <img src="images/feng.jpg" alt="" style="margin-top: 60px;">
+                            <img src="images/20.jpg" alt="" style="margin-top: 60px;">
                             <div class="dtl" style="margin-top: 60px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                    </div>
 
 <div class="col-md-3">                   
                      <div class="dtl27">
-                            <img src="images/feng-1.jpg" alt="" style="margin-top: 60px;">
+                            <img src="images/17.jpg" alt="" style="margin-top: 60px;">
                             <div class="dtl" style="margin-top: 60px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                    </div>
 <div class="col-md-3">
-         <label class="fj"><a href="#">湖泊风景区</a></label>
+         <label class="fj"><a href="jingqu.html?id=1&type=category" >湖泊风景区</a></label>
    </div>
    <div class="col-md-3">
-         <label class="fj"><a href="#">山岳风景区</a></label>
+         <label class="fj"><a href="jingqu.html?id=2&type=category">山岳风景区</a></label>
    </div>
    <div class="col-md-3">
-         <label class="fj"><a href="#">森林风景区</a></label>
+         <label class="fj"><a href="jingqu.html?id=3&type=category">森林风景区</a></label>
    </div>
    <div class="col-md-3">
-         <label class="fj"><a href="#">山水风景区</a></label>
+         <label class="fj"><a href="jingqu.html?id=4&type=category">山水风景区</a></label>
    </div>
    	<div class="col-md-3">
                         <div class="dtl27" ">
-                            <img src="images/feng.jpg" alt="" style="margin-top: 20px;">
+                            <img src="images/30.jpg" alt="" style="margin-top: 20px;">
                             <div class="dtl" style="margin-top: 20px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                         </div>
      <div class="col-md-3">                   
                      <div class="dtl27">
-                            <img src="images/feng-1.jpg" alt="" style="margin-top: 20px;">
+                            <img src="images/7.jpg" alt="" style="margin-top: 20px;">
                             <div class="dtl" style="margin-top: 20px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                    </div>
 <div class="col-md-3">                   
                      <div class="dtl27">
-                            <img src="images/feng.jpg" alt="" style="margin-top: 20px;">
+                            <img src="images/3.jpg" alt="" style="margin-top: 20px;">
                             <div class="dtl" style="margin-top: 20px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                    </div>
 
 <div class="col-md-3">                   
                      <div class="dtl27">
-                            <img src="images/feng-1.jpg" alt="" style="margin-top: 20px;">
+                            <img src="images/17.jpg" alt="" style="margin-top: 20px;">
                             <div class="dtl" style="margin-top: 20px;">
                                 <h3>Lorem Ipsum</h3>
                                 <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                <a href="#">Read More</a>
+                                <a href="#">详情</a>
                             </div>
                         </div>
                    </div>
 <div class="col-md-3">
-         <label class="fj"><a href="#">海滨风景区</a></label>
+         <label class="fj"><a href="jingqu.html?id=5&type=category">海滨风景区</a></label>
    </div>
    <div class="col-md-3">
-         <label class="fj-1"><a href="#">休闲疗养避暑胜地</a></label>
+         <label class="fj-1"><a href="jingqu.html?id=6&type=category">休闲疗养避暑胜地</a></label>
    </div>
    <div class="col-md-3">
-         <label class="fj-2"><a href="#">宗教寺庙名胜区</a></label>
+         <label class="fj-2"><a href="jingqu.html?id=7&type=category">宗教寺庙名胜区</a></label>
    </div>
    <div class="col-md-3">
-         <label class="fj"><a href="#">革命纪念地</a></label>
+         <label class="fj"><a href="jingqu.html?id=8&type=category">革命纪念地</a></label>
    </div>
 </div>
 </div>
@@ -268,7 +286,7 @@
 			<img src="images/food_rimg05.jpg"/>
 			<div class="box">
 				<h3>伍仟锅<br />肉类套餐8.8折</h3>
-				<p>wuqianguo <br />Mutton hot<br />pot meal</p>
+				<p>wuqianguo <br />Mutton hot<br /></p>
 			 
 			</div>
 		</li>
@@ -280,7 +298,7 @@
 			<img src="images/food_rimg06.jpg"/>
 			<div class="box">
 				<h3>伍仟锅<br />肉类套餐8.8折</h3>
-				<p>wuqianguo <br />Mutton hot<br />pot meal</p>
+				<p>wuqianguo <br />Mutton hot<br /></p>
 				 
 			</div>
 		</li>
@@ -292,18 +310,51 @@
 			<img src="images/food_rimg08.jpg"/>
 			<div class="box">
 				<h3>伍仟锅<br />肉类套餐8.8折</h3>
-				<p>wuqianguo <br />Mutton hot<br />pot meal</p>
+				<p>wuqianguo <br />Mutton hot<br /></p>
 				 
 			</div>
 		</li>
 		</ul>
 	</div>
 	</div>
-		
-
 	</div>
-</div>
 
+<div class="col-md-4">
+         <label class="rm"><a href="#">泡菜炒年糕</a>
+          </label>
+        <p><br><a href="#" style=" color:#666;">
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美 
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一</a></p>
+   </div>
+   <div class="col-md-4">
+         <label class="rm"><a href="#">韩式炸酱面</a></label>
+<p><br><a href="#" style="  color:#666;">
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美 
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一</a></p>
+
+   </div>
+   <div class="col-md-4">
+         <label class="rm"><a href="#">菠萝咕噜肉</a></label>
+         <p style="margin-left:  10px;"><br><a href="#" style=" color:#666; margin-left: 27px;">
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美 
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一
+        一是韩国著名美食之一是韩国著名美食之一是韩国著名美食之一</a></p>
+   </div>        	
+
+
+</div> 
+</div>
 </div>
 <!-- 热门推荐 end -->
 
@@ -313,13 +364,133 @@
 <!-- 推荐美食 begin -->
 <div class="go">
  <div class="col-md-7 col-md-offset-5">
-		<label class="ms">Recom美食</label>
+		<label class="ms">Recom美食!</label>
 	</div></div>
 	<div class="tuijian">
 		<div class="container">
 			<div class="row">
-  
-            
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img0">
+                            <div class="cptn" >
+                                <div>
+                                    <h3 id="shi0"> </h3>
+                                    <p id="kou0"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img1">
+                            <div class="cptn">
+                                <div>
+                                    <h3 id="shi1"> </h3>
+                                    <p id="kou1"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img2">
+                            <div class="cptn">
+                                <div>
+                                    <h3 id="shi2"> </h3>
+                                    <p id="kou2"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img3">
+                            <div class="cptn">
+                                <div>
+                                    <h3 id="shi3"> </h3>
+                                    <p id="kou3"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>
+ <div class="col-md-3">
+         <label class="tj"><a href="" id="lian0"> </a></label>
+   </div>
+   <div class="col-md-3">
+         <label class="tj"><a href="#" id="lian1"> </a></label>
+   </div>
+   <div class="col-md-3">
+         <label class="tj"><a href="#" id="lian2"> </a></label>
+   </div>
+   <div class="col-md-3">
+         <label class="tj"><a href="#" id="lian3"> </a></label>
+   </div>
+
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img4">
+                            <div class="cptn">
+                                <div>
+                                    <h3 id="shi4"> </h3>
+                                    <p id="kou4"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img5">
+                            <div class="cptn">
+                                <div>
+                                    <h3 id="shi5"> </h3>
+                                    <p id="kou5"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img6">
+                            <div class="cptn">
+                                <div>
+                                    <h3 id="shi6"> </h3>
+                                    <p id="kou6"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>
+    <div class="item col-md-3 ">
+                  <div class="cptn03">
+                            <img src=" " alt="" style="margin-top: 30px; width: 275px;height: 191px;" id="img7">
+                            <div class="cptn">
+                                <div>
+                                    <h3 id="shi7"> </h3>
+                                    <p id="kou7"> </p>
+                                </div>
+                                <a href="#" class="fa fa-long-arrow-right"></a>
+                            </div>
+                        </div>
+                      </div>      
+
+<div class="col-md-3">
+         <label class="tj"><a href="#" id="lian4"> </a></label>
+   </div>
+   <div class="col-md-3">
+         <label class="tj"><a href="#" id="lian5"> </a></label>
+   </div>
+   <div class="col-md-3">
+         <label class="tj"><a href="#" id="lian6"> </a></label>
+   </div>
+   <div class="col-md-3">
+         <label class="tj"><a href="#" id="lian7"> </a></label>
+   </div>            
     
 			
 			</div>
@@ -332,9 +503,9 @@
 
 
 	 
+<script src="js/jquery-1.12.1.min.js"></script>
 
-
-<script type="text/javascript">
+   <script type="text/javascript">  
 $(function(){
 
 	$('.food_img ul li').hover(function(){
@@ -344,6 +515,40 @@ $(function(){
 	})
 	
 })
+</script> 
+
+<!-- 推荐美食数据 --> 
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:'wad/recommand/8',
+			method:'get',
+			dataType:'json',
+			success:function(data,status,xhr){
+				console.log(data);
+				for(var i=0;i<data.length;i++){
+					$('#lian'+i).text(data[i].name)
+					$('#kou'+i).text(data[i].taste)
+					$('#shi'+i).text(data[i].propose)
+					 
+					$('#img'+i).attr('src',data[i].pic_1)
+					$('#lian'+i).attr('href','delicious-x.html?id='+data[i].id);
+
+				}
+			},
+			error:function(xhr,status,error){
+				console.log(error);
+			}
+		})
+	})
 </script>
-</body>
+<!-- 推荐美食数据 -->
+
+<!-- 获取用户名 -->
+<script type="text/javascript">
+  if(Cookies.get('user')){
+    document.getElementById('yh').innerHTML='欢迎您：'+Cookies.get('user');
+  }
+</script><!-- 获取用户名 -->
+
 </html>

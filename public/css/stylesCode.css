@@ -1,4 +1,4 @@
-/* 
+cptn/* 
 
     * Name: Animatia
     * Vesion: 2.0
@@ -7030,9 +7030,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+     
 }
 .cptn03 img {
     width: 100%;

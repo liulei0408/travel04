@@ -48,7 +48,7 @@ router.route('/search')
         return
       }
 
-      const sql = 'select id, name, alias, taste, area, propose, pic_1, history '
+      const sql = 'select id, name, alias, taste, area, propose, pic_1,pic_2,intro, history '
           + 'from wine_and_dine '
           + 'where locate(?, name) > 0 '
           + 'or locate(?, alias) > 0 '

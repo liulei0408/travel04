@@ -1,0 +1,156 @@
+<!doctype html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>search</title>
+<style type="text/css">
+
+*{margin: 0;padding: 0;}
+
+.nav-right li{float: left;list-style-type: none;}
+.nav-right li a{margin-left: 20px;}
+.daohang{width: 100%;height: 60px;background-color: #3DC3FB;}
+
+.nav li{float: left;margin-left: 40px;margin-top: 8px;font-family: "微软雅黑"; }
+.nav li a {color: #fff; font-size: 18px; }
+.nav-r li{float: left;list-style-type: none;}
+.nav-r li a{margin-left: 20px;color: #fff;}
+.tu li{float:left;list-style: none;margin-left: 15px;}
+.p{position: relative;}
+
+ 
+</style>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+ <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+ <script type="text/javascript" src="js/arg-1.3.js"></script>
+ <script type="text/javascript" src="js/jquery.js"></script>
+
+ 
+   
+
+ 
+ 
+  
+ 
+ 
+ 
+</head>
+<body >
+    <!-- banner  --> 
+
+ <div class="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 ">
+      <img src="images/logo-2.jpg" style="margin-left: 60px;">
+        
+      </div>
+      <div class="col-md-4">
+        <div class="input-group" style="margin-top: 45px;margin-left: 20px;"> 
+          <input type="text" class="form-control" placeholder="Search" id="input">
+           <span class="input-group-addon"><button style="border:none;" id="submit">搜索</button></span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <ul class="nav-right" style="margin-left: 200px;margin-top: 45px;">
+          <li><a href="#">登录</a></li>
+          <li><a href="#">注册</a></li>
+        </ul>
+         
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="daohang">
+  <div class="container">
+    <div class="col-md-8">
+       <ul class="nav"> 
+          <li class="ative"><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+        </ul> 
+    </div>
+    <div class="col-md-4">
+       <ul class="nav-r" style="margin-left: 200px;margin-top: 20px;">
+          <li><a href="#">论坛</a></li>
+          <li><a href="#">用户反馈！</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+    <div class="row" id="ss">
+      <!-- <div class="col-md-4" >
+        <img src="" style="margin-top: 60px;width: 370px;"  > 
+      </div>
+      <div class="col-md-4" style="margin-left: 30px;">
+        <h2 style="margin-top: 60px; "  > </h2> 
+        <h4  > </h4>
+        <h4 > </h4>
+        <h5 style="line-height: 30px;"  >　</h5>  </div>  -->
+
+
+   
+           <!--搜索模板  -->
+ <script id="d" type="text/x-handlebars-template">
+  {{#each wad}}
+
+  <div class="col-md-4" >
+       <img src="{{pic_2}}" style="margin-top: 60px;width: 370px;"> 
+      </div>
+      <div class="col-md-6" style="margin-left: 30px;">
+        <h2 style="margin-top: 60px; "  >{{name}} </h2> 
+        <h4 >{{alias}} </h4>
+        <h4>{{area}} </h4>
+        <h5 style="line-height: 30px;">{{intro}}</h5></div> 
+  
+  {{/each}}
+</script>
+<!-- 搜索模板end -->
+
+<!-- 搜索数据 -->
+<script type="text/javascript">
+$(function(){
+  $('#submit').on('click', function () {
+    console.log('1')
+    $.ajax({
+      url:'wad/search',
+      method:'post',
+      data: {search: $('#input').val()},
+      dataType:'json',
+      success:function(data,status,xhr){
+        console.log('2');
+        console.log(data[0]);
+        var source = $('#d').html();
+        var template = Handlebars.compile(source);
+        var da = {'wad': data};
+        $('#ss').html(template(da));
+      },
+      error:function(xhr,status,error){
+        console.log(error);
+      } 
+    });
+  });
+});
+</script>    
+  <!--搜索数据end-->
+
+ 
+
+
+
+		 
+
+
+	 
+
+ 
+</body>
+</html>

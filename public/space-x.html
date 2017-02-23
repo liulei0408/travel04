@@ -1,0 +1,163 @@
+<!doctype html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>风景详情页</title>
+<style type="text/css">
+
+*{margin: 0;padding: 0;}
+
+.nav-right li{float: left;list-style-type: none;}
+.nav-right li a{margin-left: 20px;}
+.daohang{width: 100%;height: 60px;background-color: #3DC3FB;}
+
+.nav li{float: left;margin-left: 60px;margin-top: 8px;font-family: "微软雅黑"; }
+.nav li a {color: #fff; font-size: 18px; }
+.nav-r li{float: left;list-style-type: none;}
+.nav-r li a{margin-left: 20px;color: #fff;}
+.tu li{float:left;list-style: none;margin-left: 15px;}
+
+ 
+</style>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+ <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+ <script type="text/javascript" src="js/arg-1.3.js"></script>
+ <script type="text/javascript" src="js/"></script>
+
+ 
+   
+
+ 
+ 
+  
+ 
+ 
+ 
+</head>
+<body >
+    <!-- top  --> 
+
+ <div class="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 ">
+      <img src="images/logo-2.jpg" style="margin-left: 60px;">
+        
+      </div>
+      <div class="col-md-4">
+        <div class="input-group" style="margin-top: 45px;margin-left: 20px;"> 
+          <input type="text" class="form-control" placeholder="Search">
+           <span class="input-group-addon"><button style="border:none;">搜索</button></span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <ul class="nav-right" style="margin-left: 200px;margin-top: 45px;">
+          <li><a href="#">登录</a></li>
+          <li><a href="#">注册</a></li>
+        </ul>
+         
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- top -->
+<!-- nav -->
+<div class="daohang">
+  <div class="container">
+    <div class="col-md-8">
+       <ul class="nav"> 
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+        </ul> 
+    </div>
+    <div class="col-md-4">
+       <ul class="nav-r" style="margin-left: 200px;margin-top: 20px;">
+          <li><a href="#">论坛</a></li>
+          <li><a href="#">用户反馈！</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+<!-- nav -->
+
+<!-- main -->
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" >
+       <img src="images/7.jpg" style="margin-top: 60px;width: 370px;"> 
+      </div>
+      <div class="col-md-4" style="margin-left: 30px;">
+        <h2 style="margin-top: 60px; ">帽儿山</h2> 
+        <h4>别名：傻冒er</h4>
+        <h4>位置：东北</h4>
+        <h5 style="line-height: 30px;">　　帽儿山位于黑龙江省南部尚志市帽儿山镇，位于帽儿山火车站北5公里处，距离哈尔滨市84公里，距尚志市尚志镇45公里。帽儿山位于阿什河上游，属张广才岭西坡，最高海拔805米，面积10平方公里，由侏罗纪中酸性火册岩构成，是哈尔滨市附近的最高峰。为东北林业大学下设的实验林场。2011年-2014年，由侏罗纪中酸</h5></div> 
+<div class="col-md-4" style="border-left:solid 1px #999; height:352px;width: 270px;margin-left: 60px;">
+  <h4 style="margin-top: 60px;margin-left: 10px;">其他人还看:</h4>
+  <ul class="tu">
+  <li><img src="images/27.jpg" style="width: 60px;height: 60px; margin-top:10px;">
+<h5 style="text-align: center;">尚志山</h5>
+  </li>
+    <li><img src="images/22.jpg" style="width: 60px;height: 60px; margin-top:10px;">
+    <h5 style="text-align: center;">尚志山</h5>
+    </li> 
+      <li><img src="images/11.jpg" style="width: 60px;height:60px; margin-top:10px;">
+  <h5 style="text-align: center;">尚志山</h5>
+      </li>  
+  </ul>
+  <ul class="tu">
+  <li><img src="images/27.jpg" style="width: 60px;height: 60px; margin-top:10px;">
+<h5 style="text-align: center;">尚志山</h5>
+  </li>
+    <li><img src="images/22.jpg" style="width: 60px;height: 60px; margin-top:10px;">
+    <h5 style="text-align: center;">尚志山</h5>
+    </li> 
+      <li><img src="images/11.jpg" style="width: 60px;height:60px; margin-top:10px;">
+  <h5 style="text-align: center;">尚志山</h5>
+      </li>  
+  </ul>
+  <ul class="tu">
+  <li><img src="images/27.jpg" style="width: 60px;height: 60px; margin-top:10px;">
+<h5 style="text-align: center;">尚志山</h5>
+  </li>
+    <li><img src="images/22.jpg" style="width: 60px;height: 60px; margin-top:10px;">
+    <h5 style="text-align: center;">尚志山</h5>
+    </li> 
+      <li><img src="images/11.jpg" style="width: 60px;height:60px; margin-top:10px;">
+  <h5 style="text-align: center;">尚志山</h5>
+      </li>  
+  </ul>
+</div>
+  </div>
+<div class="row">
+<div class="col-md-8"> 
+    <h5 style="line-height: 30px;  ">体的综合性游乐园，园中全部为高仿真恐龙，进入园中领略远古年代的神秘气息，撩开史前动物-恐龙的神秘面纱，喜爱科普知识的小朋友在神秘的恐龙园一定会真切的聆听到来自远古的呼唤。在山门前映入眼帘的是一处"太极"造型莲花池，池内鱼儿游荡于莲荷之中。池上 一座木制栈桥蜿蜒崎岖，游人漫步桥上，亦成为景中之人。
+
+仰则悦景于山，俯则观法于池。太极如意莲花池沿路直上，于山路右侧是一全木制天然平台乾坤亭，踏足亭中，仰首远眺，峰峦叠嶂，草木葱荣;俯首太极如意莲花池，如在道家法悟的意境中神游。
+
+沿着山路蜿蜒上升犹如置身于空中花园，从初春到暮秋不同花期的草木嫣然盛开，绚丽灿烂。</h5>
+  </div> 
+  <div class="col-md-4" style="border-left:solid 1px #999; height:350px;width: 270px;margin-left: 90px;"></div>
+  </div> 
+    </div>
+ </div>
+       
+           
+      
+
+ 
+
+
+
+		 
+
+
+	 
+
+ 
+</body>
+</html>
